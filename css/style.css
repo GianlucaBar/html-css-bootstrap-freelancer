@@ -1,0 +1,92 @@
+/* common */
+img{
+    max-width: 100%;
+}
+
+.section-green{
+    background-color: #1ABC9C;
+    color: white;
+}
+
+.section-title h2{
+ text-transform: uppercase;
+ font-size: 55px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/* placeholder immagini TEST */
+.placeholder-img{
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    margin: auto;
+}
+/* top-nav  */
+.top-nav{
+    background-color: #2C3E50;
+    color: white;
+}
+
+.top-nav h2{
+    font-size: 20px;
+}
+
+.nav-links{
+    list-style-type: none;
+    text-align: right;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 20px 0 20px 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.menu{
+    padding: 10px 0;
+    font-size: 27px;
+    text-align: right;
+}
+/* fine top-nav  */
+
+/* jumbotron  */
+
+.teaser{
+    width: 65%;
+    margin: auto;
+}
+
+.teaser img{
+    width: 40%;
+}
+
+/* MAIN  */
+
+/* portfolio  */
+.inner{
+    padding-top: 20px;
+}
+
+.content{
+    background-color: violet;
+    border-radius: 10px;
+}
+
+/* fine portfolio  */
+
+/* sezione about  */
+
+.about{
+    margin-top: 50px;
+}
+
+
