@@ -3,28 +3,51 @@ img{
     max-width: 100%;
 }
 
+.small-wrapper{
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+}
+
 .section-green{
     background-color: #1ABC9C;
     color: white;
 }
 
+.section-padding{
+    padding: 50px 0;
+}
+
 .section-title h2{
  text-transform: uppercase;
  font-size: 55px;
- padding-top: 50px;
 }
 
-.center-text{
-    text-align: center;
-}
 
 .inner-padding{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 body{
     color: #2C3E50;
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.star{
+    font-size: 22px;
+    margin: 20px 0;
+}
+.star::after,
+.star::before {
+    content: "";
+    border-bottom: 3px solid;
+    display: inline-block;
+    width: 160px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
 /* placeholder immagini TEST */
 .placeholder-img{
     height: 300px;
@@ -32,6 +55,7 @@ body{
     background-color: tomato;
     margin: auto;
 }
+
 /* top-nav  */
 .top-nav{
     background-color: #2C3E50;
@@ -39,12 +63,14 @@ body{
 }
 
 .top-nav h2{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav-links{
     list-style-type: none;
     text-align: right;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li{
@@ -56,10 +82,14 @@ body{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.menu{
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.burger{
     padding: 10px 0;
     font-size: 27px;
     text-align: right;
@@ -68,54 +98,56 @@ body{
 
 /* jumbotron  */
 
-.teaser{
-    width: 65%;
-    margin: auto;
+.teaser P{
+    font-size: 24px;
 }
 
 .teaser img{
-    width: 40%;
+    width: 300px;
 }
 
 /* MAIN  */
 
-/* portfolio  */
-
-.content{
-    background-color: violet;
-    border-radius: 10px;
-}
-
-/* fine portfolio  */
-
 /* sezione about  */
 
-.about{
-    margin-top: 50px;
-}
-
-.small-wrapper{
-    max-width: 900px;
-    margin: auto;
-}
-
-.about button{
+.btn-download{
+    color: white;
+    border: 1px solid white;
     margin: 30px auto;
+}
+
+.btn-download:hover{
+    background-color: white;
+    color: #1ABC9C;
 }
 /* fine about  */
 
 /* sezione contatti  */
 
-/* provvisorio  */
-.form{
-    text-align: left;
-    margin: 20px 40px;
-}
-
-.form span{
-    display: block;
+#contact-form input,
+#contact-form textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    border-radius: none;
     font-size: 25px;
     padding: 30px 0;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #536270;
+}
+
+.btn-send{
+    background-color: #1ABC9C;
+    color: white;
+}
+
+.btn-send:hover{
+    background-color: white;
+    color: #1ABC9C;
 }
 
 /* fine contatti  */
@@ -127,6 +159,7 @@ body{
     font-size: 20px;
 }
 
+
 .copyrights{
     background-color: #2C3E50;
     color: white;
@@ -134,6 +167,53 @@ body{
     padding-bottom: 60px;
 }
 
-.container-padding{
-    padding: 40px 0;
+.footer-top h3{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.footer-top span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.highlight{
+    color: #1ABC9C;
+}
+
+.circle{
+    height: 45px;
+    width: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.social-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li{
+    display: inline-block;
+    padding: 0 3px;
+}
+
+footer .social-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-links li a:hover{
+    color: #1ABC9C;
+}
+
+@media all and (max-width: 768px){
+    .footer-padding{
+        padding-top: 40px;
+    }
 }
